@@ -61,4 +61,10 @@ public class Restaurant {
         return name;
     }
 
+    public int calculatePrice(String... itemNames){
+        int total = 0;
+
+        return total;
+    }
+
 }

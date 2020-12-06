@@ -72,4 +72,19 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>Price<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    @Test
+    public void calculating_total_price_should_fail_method_not_implemented() {
+
+        restaurant.addToMenu("Sweet corn soup",100);
+        restaurant.addToMenu("Vegetable lasagne", 200);
+
+        int total = restaurant.calculatePrice("Sweet corn soup","Vegetable lasagne");
+
+        assertEquals(300,total);
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
