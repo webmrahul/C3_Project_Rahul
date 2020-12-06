@@ -76,7 +76,7 @@ class RestaurantTest {
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>Price<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     @Test
-    public void calculating_total_price_should_fail_method_not_implemented() {
+    public void calculating_total_price_should_pass_method_implemented() {
 
         restaurant.addToMenu("Sweet corn soup",100);
         restaurant.addToMenu("Vegetable lasagne", 200);
